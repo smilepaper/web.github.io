@@ -1,7 +1,79 @@
 <!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-    <title>My website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>hello world</p>
+    <!-- 導航欄 -->
+    <header>
+        <nav>
+            <div class="logo">我的名字</div>
+            <ul class="nav-links">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁區塊 -->
+    <section id="home">
+        <div class="hero">
+            <h1>歡迎來到我的個人網站</h1>
+            <p>這裡是我展示自我與作品的地方</p>
+            <a href="#portfolio" class="btn">查看作品</a>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about">
+        <h2>關於我</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/150" alt="我的照片">
+            <p>我是[你的名字]，一個熱愛[你的興趣/職業，例如「設計與程式設計」]的人。我致力於創造有意義的內容，並與大家分享我的經驗。</p>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio">
+        <h2>我的作品</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="作品1">
+                <h3>作品名稱 1</h3>
+                <p>簡單描述你的作品。</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="作品2">
+                <h3>作品名稱 2</h3>
+                <p>簡單描述你的作品。</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="作品3">
+                <h3>作品名稱 3</h3>
+                <p>簡單描述你的作品。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我 -->
+    <section id="contact">
+        <h2>聯絡我</h2>
+        <p>有任何問題或合作機會，歡迎聯繫我！</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>電話: 123-456-7890</p>
+            <p>社群: <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer>
+        <p>&copy; 2025 [你的名字]. 版權所有。</p>
+    </footer>
 </body>
+</html>
