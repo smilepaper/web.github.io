@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>矩陣求解器</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="banner-title">
+            <image src="matrix_icon.png" width="100" height="100"></image>
+            <h1>矩陣求解器</h1>
+        </div>
+    </div>
+    <div class="matrix-controls">
+        <label for="operation">選擇操作：</label>
+        <select id="operation">
+            <option value="addition">加法 (A + B)</option>
+            <option value="subtraction">減法 (A - B)</option>
+            <option value="multiplication">乘法 (A × B)</option>
+            <option value="determinant">行列式 (|A|)</option>
+            <option value="inverse">求逆 (A^-1)</option>
+            <option value="transpose">轉置 (A^T)</option>
+            <option value="rref">簡化行梯形式 (RREF)</option>
+            <option value="eigen">特徵值和特徵向量</option>
+        </select>
+    </div>
+    <div class="main-body">
+
+        <div class="matrix-side">
+            <div class="container">
+                <div class="matrix-input">
+                    <h2>矩陣 A</h2>
+                    <div>
+                        <label for="rows-a">行數：</label>
+                        <input type="number" id="rows-a" min="1" max="10" value="3">
+                        <label for="cols-a">列數：</label>
+                        <input type="number" id="cols-a" min="1" max="10" value="3">
+                        <button onclick="createMatrixA()">生成矩陣 A</button>
+                    </div>
+                    <div id="matrix-a-container"></div>
+                </div>
+
+                <div id="matrix-b-section" class="matrix-input">
+                    <h2>矩陣 B</h2>
+                    <div>
+                        <label for="rows-b">行數：</label>
+                        <input type="number" id="rows-b" min="1" max="10" value="3">
+                        <label for="cols-b">列數：</label>
+                        <input type="number" id="cols-b" min="1" max="10" value="3">
+                        <button onclick="createMatrixB()">生成矩陣 B</button>
+                    </div>
+                    <div id="matrix-b-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="result-side">
+            <button onclick="calculateResult()">計算結果</button>
+
+            <div class="result" id="result-container">
+                <h2>結果</h2>
+                <div id="result-output">
+                    請先輸入矩陣並選擇操作。
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
